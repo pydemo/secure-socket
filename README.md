@@ -5,12 +5,12 @@ Secure socket communication using Python
 Server: 
 ``` 
     cd server_dir
-    python3 cr_server.py
+    python3 server.py
 ```     
 Client: 
 ```
     cd client_dir
-    python3 cr_client.py
+    python3 client.py
 ```
 ## Example
 
