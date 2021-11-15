@@ -5,7 +5,7 @@ Secure socket communication using Python
 Server: 
 ``` 
     cd server_dir
-    python3 server/cr_server.py
+    python3 cr_server.py
 ```     
 Client: 
 ```
