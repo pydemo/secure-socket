@@ -47,10 +47,10 @@ def ConnectionSetup():
             clientPublicHash = clientPublicHash.replace(b"\r\n", b'')
             tmpHashObject = hashlib.md5(tmpClientPublic)
             tmpHash = tmpHashObject.hexdigest()
-            print (8888, tmpHash, my_hash_public)
-            print(999, tmpHash == my_hash_public)
+            print (8888, tmpHash, clientPublicHash)
+            print(999, tmpHash == clientPublicHash)
             print(10000, public)
-            if tmpHash == my_hash_public:
+            if tmpHash == clientPublicHash.decode():
                 # sending public key,encrypted eight byte ,hash of eight byte and server public key hash
                 color_print("\n[!] Anonymous client's public key and public key hash matched\n", color="blue")
                 clientPublic = RSA.importKey(tmpClientPublic)
