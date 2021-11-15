@@ -16,4 +16,4 @@ Client:
 ```
 ## Example
 
-![test](https://github.com/pydemo/secure-socket/blob/main/cr_test.JPG?raw=true)
+![test](https://github.com/pydemo/secure-python-socket-using-ngrok/blob/main/images/test.JPG)
