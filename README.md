@@ -3,7 +3,8 @@ Secure socket communication using Python
 
 ## Test
 Server: 
-``` cd server_dir
+``` 
+    cd server_dir
     python3 server/cr_server.py
 ```     
 Client: 
