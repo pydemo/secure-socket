@@ -2,12 +2,13 @@
 Secure socket communication using Python
 
 ## Test
-Serever: 
-```
-    python3 cr_server.py
+Server: 
+``` cd server_dir
+    python3 server/cr_server.py
 ```     
 Client: 
 ```
+    cd client_dir
     python3 cr_client.py
 ```
 ## Example
