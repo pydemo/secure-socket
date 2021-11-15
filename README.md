@@ -1,6 +1,6 @@
 # secure-socket
 Secure socket communication using Python3
-## Original articte
+## Original article
 https://medium.com/@md.julfikar.mahmud/secure-socket-programming-in-python-d37b93233c69
 
 ## Test
