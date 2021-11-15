@@ -52,8 +52,7 @@ if __name__ == "__main__":
     # public key and private key
     random = Random.new().read
     RSAkey = RSA.generate(1024, random)
-    #public = RSAkey.publickey().exportKey()
-    #private = RSAkey.exportKey()
+
 
 
 
@@ -64,14 +63,13 @@ if __name__ == "__main__":
     else:
         host = "127.0.0.1"
         port = 8080
-    if 1:
+    if 0:
         private = open('private.txt', 'rb').read()
         public = open('public.txt', 'rb').read()
-        tmpPub = hashlib.md5(public)
-        my_hash_public = tmpPub.hexdigest() 
-        print (public)
-        print ("\n",private)
+
     else:
+        public = RSAkey.publickey().exportKey()
+        private = RSAkey.exportKey()    
         with open('private.txt', 'w'):
             pass
         with open('public.txt', 'w'):
@@ -88,7 +86,11 @@ if __name__ == "__main__":
         except BaseException:
             color_print("Key storing in failed", color="red", underline=True)
             raise
-
+             
+    tmpPub = hashlib.md5(public)
+    my_hash_public = tmpPub.hexdigest() 
+    print (public)
+    print ("\n",private)
     check = False
 
     try:
